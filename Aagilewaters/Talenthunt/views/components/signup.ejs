@@ -1,0 +1,39 @@
+<form name="signupForm" id="signupForm" action="/signup" method="post" style="display: none;">
+    <h2>Sign Up</h2>
+    <select class="userType" id="type" name="userType">
+        <option value="">--Select User type--</option>
+        <option value="jobSeeker">Job Seeker</option>
+        <option value="jobPoster">Job Poster</option>
+    </select>
+    <div class="signup_grid">
+        <div class="col">
+            <input type="text" name="name" placeholder="Full Name" required><br>
+            <input type="text" name="jobtitle" id="jobtitle" placeholder="Job Title" required><br>
+            <input type="text" name="email" id="email" placeholder="Email ID" required><br>
+            <input type="password" name="password" id="signup_password" placeholder="Password" required><br>
+            <label for="yearsExperience" style="display: inline-block; width: 200px; text-align: left;">Years of Experience:</label>
+            <input type="number" name="yearsExperience" id="yearsExperience" min="0" max="99" value="0" style="width: 7ch; display: inline-block; appearance: textfield;"><br>
+        </div>
+        <div class="col">
+            <input type="text" name="company" placeholder="Company" required><br>
+            <input type="text" name="location" id="location" placeholder="Location (City Name)" required><br>
+            <input type="number" name="number" id="number" placeholder="Phone Number" required><br>
+            <input type="password" name="confirmPassword" id="confirmPassword" placeholder="Confirm Password" required><br>
+            <div class="dropdown">
+                <button>----Select Technical Skills----</button>
+                <div class="dropdown-content">
+                    <label style="display: inline-block; text-align: left;"><input type="checkbox" name="technicalSkills" value="C">C</label>
+                    <label style="display: inline-block; text-align: left;"><input type="checkbox" name="technicalSkills" value="C++">C++</label>
+                    <label style="display: inline-block; text-align: left;"><input type="checkbox" name="technicalSkills" value="Java">Java</label>
+                    <label style="display: inline-block; text-align: left;"><input type="checkbox" name="technicalSkills" value="SQL">SQL</label>
+                    <label style="display: inline-block; text-align: left;"><input type="checkbox" name="technicalSkills" value="Python">Python</label>
+                    <label style="display: inline-block; text-align: left;"><input type="checkbox" name="technicalSkills" value="NodeJS">NodeJS</label>
+                </div>
+            </div><br>
+        </div>
+    </div>
+    <button type="submit">Sign Up</button>
+</form>
+<script>
+   
+</script>
